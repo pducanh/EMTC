@@ -36,7 +36,8 @@ This corpus is extracted from Imdb movie quotes dataset at http://imdb.com/inter
 The submission of the corpus including 3 files:
 
 1. mov_list.zip: The unlabeled data from the dataset. Each quote is stored in a file with the corresponding name (Movie name, series episode name). 
-2. self_annotated_training_data_10k.txt: The training file annotated by the authors only.Extracted from the top 10,000 lines of the files in mov_list.zip
+*** EDIT: as of May,2018 the unlabeled data from IMDB is not permitted to be shared. Please refer to  https://www.imdb.com/interfaces/ for more details ***
+2. self_annotated_training_data_10k.txt: The training file annotated by the authors only. Extracted from the top 10,000 lines of the files in mov_list.zip
 3. golden_data_1000.txt: the gold standard data file, annotated by 5 independent annotators.
 
 For more details of the corpus, please refer to the original submission.

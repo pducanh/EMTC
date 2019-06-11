@@ -1,0 +1,1068 @@
+Multi-label Emotion Movie Transcript Corpus - Gold Standard Data
+Author: Phan Duc-Anh 
+Data size: 1,000 utterances
+
+In submission to LREC2018
+10 May 2017
+
+Terms of use:
+1. This corpus can be used freely for research purposes. 
+2. If interested in commercial use of the corpus, please contact the author at: pducanh1988@gmail.com
+3. Please cite the author’s LREC paper when using this dataset in your manuscript:
+	
+	Chicago: 
+	Phan Duc-Anh and Yuji Matsumoto, "EMTC: Multi-label Corpus in Movie Domain for 	Emotion Analysis in Conversational Text," In Proceedings of the 11th edition of the Language Resources and Evaluation Conference (LREC 2018), Miyazaki, Japan, May 10, 2018.
+
+	Bibtex: 
+	@inproceedings{DBLP:conf/lrec/Phan018,
+  	author    = {Duc Anh Phan and
+               Yuji Matsumoto},
+  	title     = {{EMTC:} Multilabel Corpus in Movie Domain for Emotion Analysis in
+               Conversational Text},
+  	booktitle = {Proceedings of the Eleventh International Conference on Language Resources
+               and Evaluation, {LREC} 2018, Miyazaki, Japan, May 7-12, 2018.},
+  	year      = {2018},
+  	crossref  = {DBLP:conf/lrec/2018},
+  	timestamp = {Fri, 18 May 2018 10:35:14 +0200},
+  	biburl    = {https://dblp.org/rec/bib/conf/lrec/Phan018},
+  	bibsource = {dblp computer science bibliography, https://dblp.org}
+	}
+
+.......................................................................
+
+Gold Standard Data
+-------------------
+The Gold Standard Data is a list of movie utterances and their annotated labels following Plutchik's primary emotions. The data is annotated by 5 independent annotators using multi-label scheme. The annotators are given the transcript and the corresponding video clips from the movie. The gold standard data is decided by the MAJORITY RULE: For one utterance, if one label is annotated at least 3 times, it is consider reliable and become a true label.
+
+For more details of the data, please refer to the original submission.
+
+.......................................................................
+
+VERSION INFORMATION
+-------------------
+Version 0.1 is the first version as of 10 May 2017 with the size of 1000 utterances. 
+
+FORMAT
+------
+Each line has the following format:
+
+[Character Name]:[Content of the utterance]#[Annotated labels]
+
+8 labels are: Anger, Fear, Trust, Disgust, Joy, Sadness, Surprise, Anticipation. 
+
+Because the data is annotated using multi-label scheme, we expect more than 1 label per utterance in some cases. There are also cases where the utterance is not annotated with any label, hence, the "None" annotation.
+
+For example: 
+cobb: that this world is not real.#Surprise,Fear,Sadness
+
+.......................................................................
+cobb: come back#Anticipation
+cobb: that this world is not real.#Surprise,Fear,Sadness
+saito: to convince me to honor our arrangement.#Sadness
+cobb: to take a leap of faith, yes. come back so we can be young men together again. come back with me#Anticipation,Fear
+saito: it seemed neater.#None
+mal: no creeping doubts? not feeling persecuted, dom? chased around the globe by anonymous corporations and police forces, the way the projections persecute the dreamer? admit it you don't believe in one reality anymore. so choose. choose to be here. choose me.#Anticipation,Sadness,Fear
+cobb: very impressive.#Joy,Trust,Surprise
+saito: have you come to kill me? i've been waiting for someone#Sadness
+cobb: someone from a half remembered dream.#None
+saito: cobb? impossible. we were young men together. i am an old man.#Sadness
+cobb: filled with regret#Sadness,Disgust
+saito: waiting to die alone#Fear,Sadness
+cobb: i've come back for you to remind you of something. something you once knew#Sadness,Anger
+ariadne: you might have the rest of the team convinced to carry on with this job, but they don't know the truth.#Trust
+cobb: truth? what truth?#Surprise
+ariadne: the truth that at any minute, you might bring a freight train through the wall. the truth that mal is bursting through your subconscious. and the truth that as we go deeper into fischer, we're also going deeper into you. and i am not sure we're gonna like what we find.#Sadness,Trust
+john coffey: please boss, don't put that thing over my face, don't put me in the dark. i is afraid of the dark.#Fear,Sadness
+john coffey: careful, careful#Anticipation
+william 'wild bill' wharton: all i wanted me was a little cornbread, motherfuckers! all i wanted me was a little cornbread!#Anger,Sadness,Disgust
+john coffey: take my hand, boss. you see for yourself.#Fear,Sadness
+dean stanton: well? what about mrs. moores? was it like the mouse? was it a you know, a miracle?#Fear
+paul edgecomb: yes. yes, it was. damn#Fear
+hal: why don't you shut it down?#Anger,Disgust
+paul edgecomb: he is still alive! you wanna shut it down while he is still alive?#Anger
+hal: it is a tumor, paul. a brain tumor. they got x-ray pictures of it. the size of a lemon, they said way deep down inside where they can't operate. i haven't told her. i can't think of how. for the life of me, paul, i can't think of how to tell my wife she is going to die!#Fear,Sadness
+wild bill wharton: you can come in here all you likes, but you'll go out on you backs. billy the kid gon' guarantee you that.#Joy,Anger
+stephen: just when we thought all hope was lost, our noble saviors have arrived.#Joy,Trust,Anticipation
+longshanks: bring me wallace. alive if possible, dead just as good.#Anger,Anticipation
+robert is father: i am the one who is rotting, but i think your face looks graver than mine.#Sadness,Disgust,Anger
+longshanks: scottish rebels have routed one of my garrisons and murdered the noble lord.#Disgust,Anger
+prince edward: i heard. this wallace is a brigand, nothing more.#Anticipation,Disgust,Anger
+longshanks: and how would you deal with this 'brigand?'#Anger,Surprise
+prince edward: like any common thief. have the local magistrate arrest him and punish him accordingly.#Anger,Trust
+longshanks: leave us. wallace has already killed the magistrate, and taken control of the town!#Sadness,Disgust,Anger
+longshanks: what news of the north?#Anger,Surprise
+prince edward: nothing new, your majesty. we've sent riders to speed any word.#Fear,Surprise
+longshanks: i heard the word in france where i was fighting to expand your future kingdom. the word, my son, is that our entire northern army is *annihilated*.#Anger
+william wallace: i am dreaming.#Joy,Fear,Surprise
+murron: yes, you are. and you must wake.#Fear,Trust
+william wallace: i don't want to wake. i want to stay here with you.#Fear
+william wallace: you dropped your rock.#Trust
+hamish: test of manhood.#None
+william wallace: you win.#Sadness,Trust
+hamish: call it a test of soldiery then. the english won't let us train with weapons, so we train with stones.#None
+mother macclannough: it is you she takes after!#Sadness,Anger
+delia surridge: oppenheimer was able to change more than the course of a war. he changed the entire course of human history. is it wrong to hold on to that kind of hope?#Sadness
+v: i have not come for what you hoped to do. i've come for what you did.#Anger
+evey hammond: i don't see any instruments.#Fear
+v: your powers of observation continue to serve you well.#Trust
+v: there is no court in this country for men like prothero.#Disgust
+valerie: i remember how the meaning of words began to change. how unfamiliar words like collateral and rendition became frightening, while things like norsefire and the articles of allegiance became powerful. i remember how different became dangerous. i still don't understand it, why they hate us so much.#Fear,Sadness
+v: penny for the guy?#Anger,Disgust
+valerie: but america is war grew worse and worse and eventually it came to london. after that there were no roses anymore. not for anyone.#Fear,Sadness
+finch: why are you doing this?#Surprise
+evey hammond: because he was right.#Trust
+finch: about what?#Surprise
+evey hammond: that this country needs more than a building right now. it needs hope.#Anticipation,Trust
+valerie: they took ruth while she was out buying food. i've never cried so hard in my life. it wasn't long till they came for me.#Fear,Sadness
+saito: hey, i see you've changed.#Joy,Surprise
+peter browning: sorry?#Surprise
+eames:#None
+saito: ahh i am sorry. i mistook you for a friend.#Fear,Surprise
+peter browning: well, good-looking fellow, i am sure.#Trust,Anticipation
+eames: that is fischer is projection of browning. let is follow him and see how he behaves.#Trust
+saito: why?#Surprise
+eames: because how he acts will tell us if fischer is starting to suspect him just the way we want him to.#Trust
+english soldier: you remind me of my daughter back home.#Joy,Surprise
+mal: pain is in the mind, and judging by the decor we're in your mind, aren't we, arthur?#Joy
+harry terwilliger: paul, we're not gonna have some cherokee medicine man in here whoopin', hollerin' and shaking his dick are we?#None
+paul edgecomb: well actually#Fear
+toot-toot: still prayin'! still prayin'! gettin' right with jesus!#Joy
+harry terwilliger: do it quietly you old gink!#Anger
+paul edgecomb: as i was saying, i don't think they actually shake their dicks harry. be that as it may mr. bitterbuck is a christian, so i have the reverend schuster coming out.#Anticipation
+dean stanton: oh he is good. he is fast too. doesn't get 'em all worked up.#Trust
+harry terwilliger: percy met your mouse.#None
+john coffey: heaven, i am in heaven heaven heaven#Fear,Sadness
+harry terwilliger: piss on me?#Anger,Surprise
+william 'wild bill' wharton: barbecue, me and you! stinky pinky, pew, pew! or dilly, jilly, hilly or bob! it was a french-fried cajun named delacroix!#Joy
+paul edgecomb: you are about ten seconds away from spending the rest of your life in the padded room!#Anger
+paul edgecomb: you let him get past you.#Anger
+dean stanton: no i did not.#Fear
+brutus brutal howell: three grown men outsmarted by a mouse.#Surprise,Sadness
+toot-toot: this is a shocking experience!#Anger,Joy
+john coffey: he kill them wi' their love. wi' their love fo' each other. that is how it is, every day, all over the world.#Fear,Sadness
+argyle wallace: first, learn to use this. then i'll teach you to use this.#Anticipation,Joy,Trust
+king is advisor: milord, the princess might be taken hostage or her life be put in jeopardy.#Disgust,Fear
+longshanks: oh, my son would be most distressed by that. uh, but in truth, if she were to be killed, we would soon find the king of france a useful ally against the scots. you see, as king, you must find the good in any situation.#Anticipation
+old paul edgecomb: we each owe a death - there are no exceptions - but, oh god, sometimes the green mile seems so long.#Fear,Sadness
+hamish: your dream isn't about freedom. it is about murron! you're doing this to be a hero, 'cause ya think she sees ye!#Anger,Disgust
+william wallace: i don't think she sees me. i *know* she does. and your father sees you, too.#Sadness,Disgust,Anger,Trust
+stephen: jesus.#None
+william wallace: give me the strength to die well.#Fear,Sadness,Trust
+william wallace: never, in my whole life, have i ever sworn allegiance to him.#Disgust,Anger
+royal magistrate: it matters not. he is your king.#Trust
+robert the bruce: i respect what you said, but remember that these men have lands and castles. it is much to risk.#Sadness,Fear
+william wallace: and the common man, who bleeds on the battlefield, does he risk less?#Surprise,Trust
+dean stanton: what did you do?#Surprise
+john coffey: i helped del is mouse become a circus mouse. gonna live in a mouse city. down in#Sadness
+brutus brutal howell: florida?#Trust
+john coffey: boss percy bad. he mean. he stepped on del is mouse. i took it back though.#Sadness,Fear
+bill dodge: i think this boy is cheese has done slid off his cracker.#None
+paul edgecomb: a big man is ripping your ears off percy. i'd do as he says.#Anger,Trust
+paul edgecomb: i've done some things in my life i am not proud of, but this is the first time i've ever felt in real danger of hell.#Fear,Sadness
+paul edgecomb: the man is mean, careless, and stupid. bad combination in a place like this.#Sadness,Disgust
+evey hammond: i don't even know what you really look like.#Trust
+v: evey, please. there is a face beneath this mask but it is not me. i am no more that face than i am the muscles beneath it or the bones beneath them.#Fear,Trust
+evey hammond: i understand.#Joy,Trust
+v: thank you.#Joy
+v: certainly there are those who are more responsible than others, and they will be held accountable.#Anger,Disgust,Trust
+v: the multiplying villainies of nature do swarm upon him disdaining fortune with his brandished steel, which smoked with bloody execution?#Anger
+sutler: spare us your professional annotations, mr. finch. they are irrelevant.#Anger,Disgust
+forrest gump: those must be comfortable shoes, i bet you could walk all day in shoes like those and not feel a thing.#Joy,Trust
+nurse at park bench: my feet hurt.#Sadness
+forrest gump: my mama always said you can tell a lot about a person by their shoes, where they going, where they been. i've worn a lots of shoes. i bet if i think about it real hard i can remember my first pair of shoes.#Sadness,Trust
+evey hammond: i thought about keeping this, but it didn't seem right, knowing you wrote it.#None
+v: i didn't.#None
+forrest gump: i think i ruined your roommate is bathrobe.#Fear
+jenny curran: i don't care. i don't like her, anyway.#Disgust,Anger
+forrest gump: and that is all i have to say about that.#None
+paul edgecomb: seeing a man die isn't enough for you, you gotta be close enough to smell his nuts cook?#Anger,Disgust
+percy wetmore: you switched 'em. you switched 'em somehow, you bastards.#Anger,Disgust
+brutus brutal howell: yeah i always keep a spare mouse in my wallet for occasions such as this.#Joy
+forrest gump: he was from a long great military tradition. somebody from his family had fought and died in every single american war. i guess you could say he had a lot to live up to.#Joy,Surprise
+forrest gump: there was dallas, from phoenix; cleveland - he was from detroit; and tex well, i don't remember where tex come from.#Sadness,Fear,Trust
+toot-toot: gettin' to my knees. prayin'. lord in heaven, sorry for all the bad shit i've done, all the people i've trampled on, i hope they forgive me, i won't do it again, that is for sure.#Disgust
+paul edgecomb: goddamn, the sponge is dry!#Anger
+brutus brutal howell: well, don't you stop it! don't you do it. it is too late for that.#Anger
+harry terwilliger: can you believe this? the son of a bitch pissed on me!#None
+william 'wild bill' wharton: y'all like that? i am currently cooking up some turds, to go with it. nice soft 'uns. uhhh! have'em out to y'all tomorrow.#Joy
+jan edgecomb: honey, if you don't tell me what is on your mind, i am afraid i'll have to smother you with a pillow.#Anger,Sadness
+hal: what in the blue fuck was that? there is puke all over the floor up there. and that smell! i had van hayes open both doors but that smell is not going out for five damn years that is what i am bettin'. and that asshole, wharton, is singing about it. you can hear him up there!#Anger
+paul edgecomb: can he carry a tune?#None
+hal: okay, boys, what in the hell happened?#Anger,Disgust
+paul edgecomb: an execution. a successful one.#Trust
+hal: how in the name of christ can you call that a success?#Anger,Surprise,Disgust
+paul edgecomb: eduard delacroix is dead. isn't he?#None
+john coffey: you know, i fell asleep this afternoon and had me a dream. i dreamed about del is mouse.#None
+paul edgecomb: did you, john?#None
+john coffey: i dreamed he got down to that place boss howell talked about, that mouseville place. i dreamed there was kids, and how they laughed at his tricks! my! i dreamed those two little blonde-headed girls were there. they 'us laughing, too. i put my arms around 'em and sat 'em on my knees, and there 'us no blood comin' outta their hair and they 'us fine. we all watch mr. jingles roll that spool, and how we did laugh. fit to bust, we was.#Joy
+john coffey: i am smellin' me some cornbread.#Joy,Anticipation
+paul edgecomb: it is from my mises. she wanted to thank you.#Trust
+john coffey: thank me for what?#Surprise
+paul edgecomb: well, you know for a helping me.#Trust
+john coffey: helping you with what?#Surprise
+paul edgecomb: you know.#Trust
+john coffey: ohh. was your misses pleased?#Surprise,Joy
+paul edgecomb: several times.#Joy,Trust
+paul edgecomb: now how about a preacher? someone to say a little prayer with?#None
+john coffey: don't want no preacher. you can say a prayer if you like.#Trust
+paul edgecomb: me? i suppose i could if it came to that.#Surprise
+cobb: you're waiting for a train. a train that'll take you far away. you know where you hope this train will take you. but you can't know for sure. yet it doesn't matter. now, tell me why?#Sadness,Disgust,Anger,Fear
+mal: because you'll be together!#Fear
+halina: have you seen this?#Fear
+wladyslaw szpilman: what? what? i am working. what? what is this?#Surprise
+halina: it is where they're going to put us.#Fear,Sadness
+wladyslaw szpilman: what do you mean put us?#Surprise
+man waiting to cross: and the germans claim to be intelligent! you know what i think, i think they are totally stupid. i have a family to feed. i spend half my time here, waiting for them to let us through. why do they think i come here, to listen to the music?#Anger,Sadness,Disgust
+henryk szpilman: i won't wear it.#Sadness,Disgust
+regina: *i* won't wear it. i am not going to be branded.#Anger,Sadness
+dorota: i nagged jurek for weeks and weeks, and at last he gave in and said, allright, come with me tomorrow. so i came and they bombed the station!#Joy
+wladyslaw szpilman: meeting you like that was absolutely wonderful.#Joy,Trust
+dorota: really?#Joy,Surprise
+wladyslaw szpilman: yes. it was it was unforgettable.#Joy,Trust
+dorota: no-one play chopin like you.#Joy,Trust
+wladyslaw szpilman: i hope that is a compliment.#Joy
+wladyslaw szpilman: i am not going anywhere.#Trust
+halina: good. i am not going anywhere either.#None
+mother: don't be ridiculous, we've got to keep together.#Anger
+wladyslaw szpilman: look, look if i am going to die, i prefer to die in my own home. i am staying put.#Sadness,Trust
+radio announcer: poland is no longer alone.#Trust
+wladyslaw szpilman: where are we going?#Surprise
+mother: phhhhh, out of warsaw.#Sadness
+wladyslaw szpilman: out of warsaw? where?#Surprise
+regina: you haven't heard?#Surprise
+wladyslaw szpilman: heard what?#Surprise
+regina: haven't you seen the paper?#None
+wladyslaw szpilman: no!#None
+regina: ah, where is the paper?#Surprise
+halina: i used it for packing.#None
+regina: ah, she used it for packing.#Trust
+dominic: pucker up, here comes a finger.#Fear
+richard m. nixon: so, are you enjoying yourself in our nation is capital, son?#Trust
+forrest gump: yes, sir.#Joy,Trust
+richard m. nixon: so where are you staying?#Trust
+forrest gump: uh it is called the hotel airbot.#Joy
+richard m. nixon: oh, no, i know of this much nicer hotel that is very new. it is very modern. i'll have my people set you up and take care of it for you.#Surprise
+evey hammond: but why would you keep it?#Surprise,Joy
+gordon deitrich: i didn't have to be muslim to find the images beautiful, or its poetry moving.#Joy,Trust
+evey hammond: she is lying.#None
+v: how do you know?#Surprise
+evey hammond: she blinks a lot when she is reading a story she knows is false.#Trust
+lewis prothero: this so called v and his accomplice evey hammond, neo-demagogues spouting their message of hate, a delusional and aberrant voice#Anger,Disgust
+lewis prothero: aberrant and abhorrent!#Anger,Disgust
+lewis prothero: delivering a terrorist is ultimatum#Anger,Disgust
+lewis prothero: traitor!#Anger,Disgust
+lewis prothero: an ultimatum that was met with swift, surgically precise justice!#Anger
+lewis prothero: no mercy!#Anger,Disgust
+lewis prothero: the moral of this story ladies and gentleman is#Anger
+lewis prothero: good guys win, bad guys lose, and as always, england prevails!#Anger
+guard: look, all they want is one little piece of information. just give them something anything.#Trust
+evey hammond: thank you but i'd rather die behind the chemical sheds.#Sadness
+guard: then you have no fear anymore. you're completely free.#Trust
+forrest gump: they're sendin' me to vietnam#Sadness,Fear
+forrest gump: forrest, don't#Fear
+jenny curran: run, forrest! run!#Sadness,Trust
+jenny curran: forrest, i am sick.#Fear,Sadness
+forrest gump: do you have a cough due to cold?#Sadness,Fear
+forrest gump: one day it started raining, and it didn't quit for four months. we been through every kind of rain there is. little bitty stingin' rain and big ol' fat rain. rain that flew in sideways. and sometimes rain even seemed to come straight up from underneath. shoot, it even rained at night#Sadness,Anger,Surprise,Fear
+young jenny curran: you can sit here if ya want.#Trust
+lieutenant daniel taylor: i never thanked you for saving my life.#Joy,Trust
+old man in barbershop: that boy sure is a runnin' fool!#Trust
+forrest gump: i had run for 3 years, 2 months, 14 days, and 16 hours.#Sadness
+bumper sticker guy: hey man! hey listen, i was wondering if you might help me. 'cause i am in the bumper sticker business and i've been trying to think of a good slogan, and since you've been such a big inspiration to the people around here i thought you might be able to help me jump into - woah! man, you just ran through a big pile of dog shit!#Joy,Surprise
+forrest gump: it happens.#Trust
+bumper sticker guy: what, shit?#Surprise
+forrest gump: sometimes.#None
+dorothy harris: you understand this is the bus to the school, now, don'tcha?#Anger,Trust
+forrest gump jr.: of course; you're dorothy harris, and i am forrest gump.#Joy,Trust
+dorothy harris: are you coming along?#Surprise,Trust
+young forrest gump: mama said not to be taking rides from strangers.#Fear
+dorothy harris: this is the bus to school.#Anger,Surprise
+young forrest gump: i am forrest, forrest gump.#Fear
+dorothy harris: i am dorothy harris.#Trust
+young forrest gump: well, now we ain't strangers anymore.#Joy,Fear
+richard m. nixon: therefore, i shall resign the presidency effective at noon tomorrow. vice president ford will be sworn into office at that hour in this office.#Sadness,Trust
+lyndon b. johnson: god damn, son.#Joy,Surprise
+recruit officer: have you given any thought to your future, son?#Joy,Trust
+forrest gump: thought?#Surprise,Fear
+forrest gump: yeah, sir, you might want to send a maintenance man over to that office across the way. the lights are off, and they must be looking for a fuse box, 'cause them flashlights, they keep me awake.#Sadness,Fear
+wladyslaw szpilman: it is a funny time to say this, but#Joy
+halina: what?#Surprise
+wladyslaw szpilman: i wish i knew you better.#Joy
+wladyslaw szpilman: here, sell this. food is more important than time.#Anticipation,Sadness
+wailing woman: why did i do it? why did i do it? why did i do it?#Sadness
+halina: she is getting on my nerves. what did she do, for god is sake?#Sadness
+father: she smothered her baby.#Sadness
+cobb: i can't stay with her anymore because she doesn't exist.#Anger,Sadness
+mal: i am the only thing you do believe in anymore.#Sadness,Anger,Trust
+cobb: i wish. i wish more than anything. but i can't imagine you with all your complexity, all you perfection, all your imperfection. look at you. you are just a shade of my real wife. you're the best i can do; but i am sorry, you are just not good enough.#Sadness,Disgust
+william wallace: in the year of our lord 1314, patriots of scotland - starving and outnumbered - charged the fields of bannockburn. they fought like warrior poets; they fought like scotsmen, and won their freedom.#Joy,Trust
+hamish: some men are longer than others.#Joy,Trust
+campbell: your mother been telling ya stories about me again, eh?#Joy,Surprise
+english commander: i hope you've washed your ass this morning, it is about to be kissed by a king.#Joy,Disgust
+william wallace: every man dies, not every man really lives.#Sadness
+longshanks: the trouble with scotland is that it is full of scots.#Sadness
+arthur: specificity?#Surprise
+lord bottoms: as lord of these lands i will bless this marriage by taking the bride into my bed on the first night of her union.#Trust,Anticipation
+bride is father: oh, by god, you will not!#Anger,Surprise,Disgust
+eames: you mustn't be afraid to dream a little bigger, darling.#Joy,Trust
+evey hammond: she was real! she is beautiful. did you know her?#Surprise
+v: no. she wrote the letter just before she died, and i delieverd the letter to you as it had been delivered to me.#Sadness
+evey hammond: then it really happened, didn't it?#Surprise
+yusuf: did you see that?#Joy
+forrest gump: then, bubba said something i won't ever forget.#Fear,Sadness
+bubba: i wanna go home.#Fear,Sadness
+forrest gump: bubba was my best good friend. and even i know that ain't something you can find just around the corner. bubba was going to be a shrimping boat captain, but instead, he died right there by that river in vietnam.#Sadness,Fear
+finch: one thing is true of all governments - their most reliable records are tax records.#Trust
+evey hammond: god is in the rain#Sadness
+creedy: defiant to the end, huh? you won't cry like him, will you? you're not afraid of death. you're like me.#Anger
+v: the only thing that you and i have in common, mr. creedy, is we're both about to die.#None
+creedy: how do you imagine that is gonna happen?#Surprise
+v: with my hands around your neck.#Anger
+creedy: bollocks. whatchya gonna do, huh? we've swept this place. you've got nothing. nothing but your bloody knives and your fancy karate gimmicks. we have guns.#Anger,Disgust
+v: no, what you have are bullets, and the hope that when your guns are empty i am no longer be standing, because if i am you'll all be dead before you've reloaded.#Trust
+creedy: that is impossible. kill him.#Anger,Disgust
+valerie: it seems strange that my life should end in such a terrible place, but for three years i had roses, and apologized to no one.#Sadness
+v: and thus i clothe my naked villainy / with old odd ends stolen forth from holy writ/and seem a saint when most i play the devil.#Anger,Disgust
+v: would you dance with me?#Joy
+evey hammond: now? on the eve of your revolution?#Surprise
+v: a revolution without dancing is a revolution not worth having!#Joy,Trust
+v: there is no certainty - only opportunity.#Trust
+evey hammond: my father was a writer. you would've liked him. he used to say that artists use lies to tell the truth, while politicians use them to cover the truth up.#Joy
+v: a man after my own heart.#Trust
+jenny curran: have you ever been with a girl, forrest?#Sadness,Trust
+forrest gump: i sit next to them in my home economics class all the time.#Fear
+lyndon b. johnson: america owes you a debt of gratitude, son. now i understand you were wounded. where were you hit?#Joy,Trust,Surprise
+forrest gump: in the buttocks.#Sadness
+lyndon b. johnson: oh that must be a sight.#Surprise
+forrest gump: done, drill sergeant!#None
+drill sergeant: guuuuuump! why did you put that weapon together so quickly, gump?#Anger,Surprise
+forrest gump: you told me to, drill sergeant?#Fear
+drill sergeant: jesus h. christ! this is a new company record! if it wouldn't be such a waste of a damn-fine enlisted man i'd recommend you for ocs! you are gonna be a general someday, gump, now disassemble your weapon and continue!#Anger,Trust
+forrest gump: now you wouldn't believe me if i told you, but i could run like the wind blows. from that day on, if i was going somewhere, i was running!#Joy,Anticipation,Trust
+fat man at bench: it was a bullet, wasn't it?#Fear
+forrest gump: a bullet?#Surprise
+fat man at bench: that jumped up and bit you.#Fear,Trust
+forrest gump: oh, yes sir. bit me right in the buttocks. they said it was a million dollar wound, but the army must keep that money 'cause i still haven't seen a nickel of that million dollars.#Trust
+forrest gump: hello. my name is forrest, forrest gump. you want a chocolate?#Joy,Trust
+forrest gump: i am sorry i ruined your new year is eve party, lieutenant dan. she tasted like cigarettes.#Sadness,Fear
+forrest gump: when i got tired, i slept. when i got hungry, i ate. when i had to go, you know, i went.#Joy,Anticipation
+elderly southern woman on park bench: and so, you just ran?#Joy,Surprise
+forrest gump: yeah.#Joy
+evey hammond: are you a muslim?#Anger,Surprise,Disgust
+gordon deitrich: no. i am in television.#Joy
+delia surridge: you've come to kill me, haven't you?#Fear,Sadness
+v: yes.#Trust
+delia surridge: thank god.#None
+evey hammond: what is that you're making?#Surprise
+gordon deitrich: we call it eggie in the basket. my mum used to make them.#Joy
+evey hammond: this is weird.#Surprise
+gordon deitrich: what?#Surprise
+evey hammond: the first morning i was with him, he made me eggs just like this.#Trust
+gordon deitrich: really?#Surprise
+evey hammond: i swear.#Trust
+gordon deitrich: that is a strange coincidence. although, there is an obvious explanation.#Joy
+evey hammond: there is?#Surprise
+gordon deitrich: yes, evey. i am v. at last you know the truth. you're stunned, i know. it is hard to believe isn't it, that beneath this wrinkled, well-fed exterior there lies a dangerous killing machine with a fetish for fawkesian masks. ¡viva la revolución!#Joy
+evey hammond: that is not funny, gordon.#Anger
+gordon deitrich: yeah, i know. i am useless without a studio audience.#Sadness
+v: the only verdict is vengeance; a vendetta, held as a votive, not in vain, for the value and veracity of such shall one day vindicate the vigilant and the virtuous.#Anger
+v:#Joy
+v: verily, this vichyssoise of verbiage veers most verbose, so let me simply add that it is my very good honor to meet you and you may call me v.#Joy
+evey hammond: are you, like, a crazy person?#Surprise,Disgust
+v: i am quite sure they will say so. but to whom, might i ask, am i speaking?#Joy,Anticipation
+evey hammond: i am evey.#Fear
+v: evey? e-v. of course you are.#None
+evey hammond: what does that mean?#Surprise,Fear
+v: it means that i, like god, do not play with dice and do not believe in coincidence. are you hurt?#Joy,Trust
+lewis prothero: so i read that the former united states is so desperate for medical supplies that they have allegedly sent several containers filled with wheat and tobacco. a gesture, they said, of good will. you wanna know what i think? well, you're listening to my show, so i will assume you do i think it is high time we let the colonies know what we really think of them. i think its payback time for a little tea party they threw for us a few hundred years ago. i say we go down to those docks tonight and dump that crap where everything from the ulcered sphincter of arse-erica belongs! who is with me? who is bloody with me?#Anger,Anticipation,Disgust
+v: i told you, only truth. for 20 years, i sought only this day. nothing else existed until i saw you. then everything changed. i fell in love with you evey. and to think i no longer believed i could.#Fear,Sadness
+evey hammond: but i don't want you to die.#Fear,Sadness
+v: that is the most beautiful thing you could have ever given me.#Joy,Sadness
+cobb: i miss you more than i can bear, but we had our time together. i have to let you go.#Sadness,Fear
+mal: you keep telling yourself what you know. but what do you believe? what do you feel?#Anger,Sadness,Disgust
+cobb: guilt.#Sadness,Disgust
+arthur: paradox.#Surprise,Fear
+creedy: not so funny now is it, funny man?#Anger,Disgust
+evey hammond: are you like a crazy person?#Surprise
+v: i am quite sure they will say so.#Joy
+ariadne: what is happening?#Surprise,Fear
+arthur: your subconscious is looking for the dreamer; me. quick, give me a kiss.#Anticipation,Trust
+ariadne:#Fear,Trust
+ariadne: they're still looking at us.#Surprise,Fear
+arthur: yeah, it was worth a shot.#Trust
+jenny curran: you can't keep trying to rescue me all the time.#Anger,Sadness
+forrest gump: they was trying to grab you.#Sadness
+jenny curran: a lot of people try to grab me.#Sadness,Anger
+evey hammond: i wish i wasn't afraid all the time, but i am.#Fear,Sadness
+finch: if our own government was responsible for the deaths of almost a hundred thousand people would you really want to know?#Sadness
+sutler: gentlemen, i want this terrorist found and i want him to understand what terror really means.#Anger,Disgust
+tweed coat fingerman: by sun-up if you're not the sorriest piece of ass in all'a london you'll certainly be the sorest!#None
+sutler: i want this country to realize that we stand on the edge of oblivion. i want every man, woman and child to understand how close we are to chaos. i want everyone to remember why they need us!#Anger,Disgust
+v: people should not be afraid of their governments. governments should be afraid of their people.#Trust
+finch: who was he?#Surprise
+evey hammond: he was edmond dantés and he was my father. and my mother my brother my friend. he was you and me. he was all of us.#Sadness
+evey hammond: tell me do you like music, mr. finch?#None
+evey hammond: i don't want you to die.#Fear,Sadness
+v: that is the most beautiful thing you could have ever given me.#Joy
+v: there are no coincidences, delia only the illusion of coincidence.#Anger,Trust
+jenny curran: do you ever dream, forrest, about who you're gonna be?#Surprise,Trust
+forrest gump: who i am gonna be?#Surprise
+jenny curran: yeah.#Anticipation,Trust
+forrest gump: aren't-aren't i going to be me?#Sadness,Surprise
+forrest gump: in the land of china, people hardly got nothing at all.#Fear,Sadness
+john lennon: no possessions?#Surprise
+forrest gump: and in china they never go to church.#Sadness
+john lennon: no religion too?#Surprise,Trust
+dick cavett: ah. hard to imagine.#Trust
+john lennon: well it is easy if you try, dick.#Joy,Trust
+coach bryant: he must be the stupidest son of a bitch alive, but he sure is fast!#Joy,Surprise
+forrest gump: what is my destiny, mama?#Sadness,Fear
+mrs. gump: you're gonna have to figure that out for yourself.#Sadness
+evey hammond: is everything a joke to you, gordon?#Surprise
+gordon deitrich: only the things that matter.#Trust
+v: we are oft to blame in this, - / 'tis too much proved - that with devotion is visage/ and pious action we do sugar o'er/ the devil himself.#Anger,Disgust
+v: we're oft to blame, and this is too much proved, that with devotion is visage and pious action we do sugar on the devil himself.#Anger,Disgust
+baldy fingerman: what does that mean?#Fear
+v: spare the rod.#Joy
+v: may i inquire as to how you have avoided detection?#Surprise
+evey hammond: a fake id works better than a guy fawkes mask.#Trust,Disgust
+v: at last, we finally meet. i have something for you, chancellor; a farewell gift. for all the things you've done, for the things you might have done, and for the only thing you have left.#Anger,Disgust
+v: good-bye, chancellor. mr. creedy#Anger
+creedy: disgusting.#Anger,Disgust
+creedy: disgusting.#Anger,Disgust
+v: but again, truth be told, if you're looking for the guilty you need only look into a mirror.#None
+finch: tonight is your big night. are you ready for it? are we ready for it?#Sadness
+malcolm wallace: your heart is free. have the courage to follow it.#Joy,Trust,Anticipation
+forrest gump: i gotta find bubba!#Anger
+forrest gump: her dream had come true. she was a folk singer.#Joy,Sadness,Trust
+forrest gump: and cause i was a gazillionaire, and i liked doin it so much, i cut that grass for free.#Joy
+drill sergeant: gump! what is your sole purpose in this army?#Anger
+forrest gump: to do whatever you tell me, drill sergeant!#Fear
+drill sergeant: god damn it, gump! you're a god damn genius! this is the most outstanding answer i have ever heard. you must have a goddamn i.q. of 160. you are goddamn gifted, private gump. listen up, people#Anger
+forrest gump: now for some reason i fit in the army like one of them round pegs. it is not really hard. you just make your bed real neat and remember to stand up straight and always answer every question with yes, drill sergeant.#Anticipation,Sadness
+drill sergeant: is that clear?#Anger
+forrest gump: yes, drill sergeant!#Fear
+forrest gump: mama always said, dying was a part of life. i sure wish it wasn't.#Fear,Trust,Sadness
+young jenny curran: dear god, make me a bird. so i could fly far. far far away from here.#Joy,Fear,Anticipation,Trust
+mrs. gump: you have to do the best with what god gave you.#Anger,Sadness,Trust,Anticipation
+forrest gump: i'd make a good husband, jenny.#Anticipation,Sadness,Fear
+jenny curran: you would, forrest.#Sadness,Trust
+forrest gump: but you won't marry me.#Fear,Sadness
+jenny curran:  you don't wanna marry me.#Sadness
+forrest gump: why don't you love me, jenny? i am not a smart man but i know what love is.#Sadness,Disgust,Anger
+creedy: die! die! why won't you die? why won't you die?#Anger,Fear
+v: beneath this mask there is more than flesh. beneath this mask there is an idea, mr. creedy, and ideas are bulletproof.#Anger,Trust,Disgust
+lewis prothero: there will be no negotiation, roger. when i arrive in the morning, the paddy will be gone. i am looking at the tape right now, and he has no idea how to light me! my nose looks like big freaking ben! listen to me, you bleeding sod, england prevails because i say it does! and so does every lazy bum on this show, and that includes you! find another dop, or find yourself another job!#Anger,Disgust
+evey hammond: no one will ever forget that night and what it meant for this country. but i will never forget the man and what he meant to me.#Joy,Sadness
+creedy: why should i trust you?#Anger,Fear
+v: because it is the only way you're ever going to stop me!#None
+gordon deitrich: you wear a mask for so long, you forget who you were beneath it.#Disgust
+v: while you slept.#Anger
+delia surridge: is there any pain?#Fear,Sadness
+v: no.#Trust
+delia surridge: thank you. is it meaningless to apologize?#Fear,Sadness
+v: never.#Trust
+delia surridge: i am so sorry.#Fear,Sadness
+lewis prothero: strength through unity! unity through faith!#Trust
+v: conceal me what i am, and be my aid for such disguise as haply shall become the form of my intent.#Trust
+v: i dare do all that may become a man; who dares do more is none.#Trust
+v: the time has come for me to meet my maker and to repay him in kind for all that he is done.#Anger,Trust
+william wallace: go back to england and tell them there that scotland is daughters and her sons are yours no more. tell them scotland is free.#Anger,Trust,Disgust
+william wallace: why do you help me?#Trust
+princess isabelle: because of the way you are looking at me now.#Fear
+stephen: the almighty says this must be a fashionable fight. it is drawn the finest people.#Trust,Anticipation
+william wallace: there is a difference between us. you think the people of this country exist to provide you with position. i think your position exists to provide those people with freedom. and i go to make sure that they have it.#Anger,Trust
+robert the bruce: you have bled with wallace, now bleed with me.#Sadness,Anger
+william wallace: lower your flags and march straight back to england, stopping at every home you pass by to beg forgiveness for a hundred years of theft, rape, and murder. do that and your men shall live. do it not, and every one of you will die today.#Anger,Disgust
+robert is father: at last, you know what it means to hate. now you're ready to be a king.#Anticipation,Anger,Trust
+robert the bruce: my hate will die with you.#Anger,Disgust
+robert the bruce: lands, titles, men, power, nothing.#Sadness,Disgust,Anger
+robert is father: nothing?#Surprise
+robert the bruce: i have nothing. men fight for me because if they do not, i throw them off my land and i starve their wives and their children. those men who bled the ground red at falkirk, they fought for william wallace, and he fights for something that i never had. and i took it from him, when i betrayed him. i saw it in his face on the battlefield and it is tearing me apart.#Anger,Fear,Sadness,Disgust
+robert is father: all men betray. all lose heart.#Trust,Disgust
+robert the bruce: i don't want to lose heart. i want to believe as he does.#Anger,Sadness,Disgust
+princess isabelle: the king desires peace.#Trust,Sadness
+william wallace: longshanks desires peace?#None
+princess isabelle: he declares it to me, i swear it. he proposes that you withdraw your attack. in return he grants you title, estates, and this chest of gold which i am to pay to you personally.#None
+william wallace: a lordship and titles. gold. that i should become judas?#None
+princess isabelle: peace is made in such ways.#None
+william wallace: slaves are made in such ways. the last time longshanks spoke of peace i was a boy. and many scottish nobles, who would not be slaves, were lured by him under a flag of truce to a barn, where he had them hanged. i was very young, but i remember longshanks' notion of peace.#None
+fischer: man, couldn't someone have dreamt up a goddamn beach? huh?#Fear,Disgust
+saito: no room for tourists in these jobs.#Joy,Fear
+mal: and judging by the decor, we're in your mind, aren't we, arthur?#Joy
+arthur: what happened?#Surprise,Fear
+ariadne: cobb stayed.#Surprise
+arthur: with mal?#Surprise
+ariadne: no, to find saito.#Fear,Trust
+arthur: he'll be lost.#Fear,Sadness
+ariadne: no he'll be all right.#Trust,Anticipation
+jenny curran: listen, you promise me something, ok? just if you're ever in trouble, don't be brave. you just run, ok? just run away.#Fear,Sadness
+lou: i am fucking lou. who the fuck are you?#Surprise
+tyler durden: the things you own end up owning you.#Trust
+narrator: strangers with this kind of honesty make me go a big rubbery one.#Sadness,Trust
+narrator: clean food, please.#Anger
+waiter: in that case, sir, may i advise against the lady eating clam chowder?#None
+narrator: no clam chowder, thank you.#Anger,Disgust
+tyler durden: what is that smell?#Surprise
+tyler durden: in the world i see - you are stalking elk through the damp canyon forests around the ruins of rockefeller center. you'll wear leather clothes that will last you the rest of your life. you'll climb the wrist-thick kudzu vines that wrap the sears tower. and when you look down, you'll see tiny figures pounding corn, laying strips of venison on the empty car pool lane of some abandoned superhighway.#Sadness
+narrator: first person that comes out this fucking door gets a gets a *lead salad*, you understand?#Anger,Fear,Disgust
+tyler durden: it is only after we've lost everything that we're free to do anything.#Trust,Sadness
+narrator: when people think you're dying, they really, really listen to you, instead of just#Joy,Trust
+marla singer: - instead of just waiting for their turn to speak?#Sadness
+tyler durden: man, you've got some fucked up friends, i am tellin' ya. limber, though#Joy
+tyler durden: where'd you go, psycho boy?#None
+narrator: i felt like destroying something beautiful.#Sadness,Trust
+narrator: on a long enough timeline, the survival rate for everyone drops to zero.#Sadness,Trust
+nash: she never gets old! marcee can't be real; she never gets old!#Sadness,Fear
+alicia: i once tried to count them all. i, actually, made it to 4,348.#Joy,Trust
+nash: you are exceptionally odd.#Joy,Trust
+alicia: i bet you're very popular with the girls.#Joy,Trust
+nash: this is a group playing touch football. this is a flock of pigeons fighting over bread crumbs. and this is a woman chasing a man who stole her purse.#Joy,Trust
+charles: john, you watched a mugging. that is weird.#Surprise
+nash: if we all go for the blonde and block each other, not a single one of us is going to get her. so then we go for her friends, but they will all give us the cold shoulder because no on likes to be second choice. but what if none of us goes for the blonde? we won't get in each other is way and we won't insult the other girls. it is the only way to win. it is the only way we all get laid.#Joy,Trust,Anticipation
+nash: they are my past. everyone is haunted by their past.#Trust
+charles: when is the last time you ate? you know food.#Anticipation
+charles: listen. if we can't break the ice, how 'bout we drown it?#Joy,Trust
+alicia: god must be a painter. why else would we have so many colors?#Trust,Surprise
+nash: i've gotten used to ignoring them and i think, as a result, they've kind of given up on me. i think that is what it is like with all our dreams and our nightmares, martin, we've got to keep feeding them for them to stay alive.#Sadness,Trust
+nash: classes will dull your mind.#Trust
+narrator: so when the snooty cat, and the courageous dog, with the celebrity voices meet for the first time in reel three, that is when you'll catch a flash of tyler is contribution to the film.#Joy
+narrator: nobody knows that they saw it, but they did#Trust
+tyler durden: a nice, big cock#Joy
+tyler durden: i'll bring us through this. as always. i'll carry you - kicking and screaming - and in the end you'll thank me.#Trust,Anticipation
+customer: are you sure this place is honest?#Surprise
+carl: honest? as honest as the day is long!#Surprise
+ricky: you're too old, fat man.#Joy,Disgust
+narrator: i want you to listen to me very carefully, tyler.#Anger
+tyler durden: okay#Fear,Trust
+narrator: my eyes are open.#Anger,Trust
+narrator: it is called a changeover. the movie goes on, and nobody in the audience has any idea.#Sadness
+narrator: bob is dead, they shot him in the head!#Anger,Fear,Sadness
+tyler durden: you wanna make an omelet, you gotta break some eggs.#Trust
+narrator: when deep space exploration ramps up, it'll be the corporations that name everything, the ibm stellar sphere, the microsoft galaxy, planet starbucks.#Trust
+narrator: you can swallow a pint of blood before you get sick.#Joy
+narrator: home was a condo on the fifteenth floor of a filing cabinet for widows and young professionals. the walls were solid concrete. a foot of concrete is important when your next-door neighbor lets their hearing aid go and have to watch game-shows at full volume. or when a volcanic blast of debris that used to be your furniture and personal effects blows out of your floor-to-ceiling windows and sails flaming into the night. i suppose these things happen.#Trust
+tyler durden: we're a generation of men raised by women. i am wondering if another woman is really the answer we need.#Trust
+narrator: i am gonna go inside, and i am gonna get a shovel.#None
+narrator: if i didn't say anything, people always assumed the worst.#Sadness
+nash: the prodigal roommate revealed. saw my name on the lecture slate. you lying son of a bitch!#Anger,Sadness,Disgust
+dr. rosen: who are you talking to? tell me who you see.#Anger,Trust
+nash: how do you say charles herman in russian?#Anger,Disgust
+charles: so what is your story? you the poor kid that never got to go to exeter or andover?#Disgust
+nash: despite my privileged upbringing, i am actually quite well-balanced. i have a chip on both shoulders.#Sadness,Trust
+dr. rosen: you can't reason your way out of this!#Anger
+nash: why not? why can't i?#Anger,Surprise,Disgust
+dr. rosen: because your mind is where the problem is in the first place!#Anger,Trust
+tyler durden: fuck off with your sofa units and strine green stripe patterns, i say never be complete, i say stop being perfect, i say let lets evolve, let the chips fall where they may.#Joy,Disgust
+tyler durden: tomorrow will be the most beautiful day of raymond k. hessel is life. his breakfast will taste better than any meal you and i have ever tasted.#Sadness
+robert 'bob' paulson: go ahead, cornelius, you can cry.#Sadness
+charles: that isaac newton fellow was right.#Joy,Fear
+nash: he was on to something.#Joy
+charles: clever boy.#Joy,Trust
+tyler durden: it is getting exciting now, two and one-half. think of everything we've accomplished, man. out these windows, we will view the collapse of financial history. one step closer to economic equilibrium.#Anger,Disgust
+tyler durden: you got it.#Anger,Trust
+narrator: no.#Fear,Sadness
+tyler durden: say it.#Anger,Sadness
+narrator: because#Fear
+tyler durden: say it.#Anger
+narrator: because we're the same person.#Fear,Trust
+tyler durden: that is right.#Trust
+marla singer: my god. i haven't been fucked like that since grade school.#Joy,Trust
+alicia: you want to know what is real? this [putting her hand on his heart and his hand on her face] this is real.#Joy,Sadness,Trust
+nash: find a truly original idea. it is the only way i will ever distinguish myself. it is the only way i will ever matter.#Anticipation,Sadness,Trust
+captain renault: no matter how clever he is, he still needs an exit visa or i should say two?#Joy,Trust
+rick: why two?#Surprise
+captain renault: he is traveling with a lady.#Trust
+rick: he'll take one.#Trust
+captain renault: i think not. i have seen the lady.#Trust
+captain renault: we are very honored tonight, rick. major strasser is one of the reasons the third reich enjoys the reputation it has today.#Joy,Trust
+major heinrich strasser: you repeat *third* reich as though you expected there to be others!#Joy,Disgust
+captain renault: well, personally, major, i will take what comes.#Trust
+tyler durden: my dad never went to college, so it was real important that i go.#Sadness
+narrator: sounds familiar.#None
+tyler durden: so i graduate, i call him up long distance, i say dad, now what? he says, get a job.#Sadness
+narrator: same here.#None
+tyler durden: now i am 25, make my yearly call again. i say dad, now what? he says, i don't know, get married.#Sadness
+narrator: i can't get married, i am a 30 year old boy.#Sadness
+tyler durden: we're a generation of men raised by women. i am wondering if another woman is really the answer we need.#None
+narrator: i've found a new one. for men *only*.#Joy
+marla singer: oh, is it a testicle thing?#Surprise
+major strasser: are you one of those people who cannot imagine the germans in their beloved paris?#Joy
+rick: it is not particularly my beloved paris.#Sadness,Trust
+heinz: can you imagine us in london?#None
+rick: when you get there, ask me!#Disgust
+captain renault: hmmh! diplomatist!#Joy
+major strasser: how about new york?#Joy
+rick: well there are certain sections of new york, major, that i wouldn't advise you to try to invade.#Disgust,Anger
+captain renault: this is the end of the chase.#None
+rick: twenty thousand francs says it isn't.#Trust
+captain renault: is that a serious offer?#Surprise
+rick: i just paid out twenty. i'd like to get it back.#None
+captain renault: make it ten. i am only a poor corrupt official.#None
+ugarte: you despise me, don't you?#Surprise
+rick: if i gave you any thought i probably would.#None
+ilsa: i can't fight it anymore. i ran away from you once. i can't do it again. oh, i don't know what is right any longer. you have to think for both of us. for all of us.#Sadness,Fear
+rick: all right, i will. here is looking at you, kid.#Joy,Trust
+ilsa: i wish i didn't love you so much.#Joy,Trust
+captain renault: what in heaven is name brought you to casablanca?#Trust,Surprise
+rick: my health. i came to casablanca for the waters.#Trust
+captain renault: the waters? what waters? we're in the desert.#Surprise
+rick: i was misinformed.#Sadness,Trust
+narrator: tyler is not here. tyler went away. tyler is gone.#None
+rick: i am sorry for asking. i forgot we said no questions.#Fear,Sadness
+ilsa: well, only one answer can take care of all our questions.#Joy,Trust
+rick: i wouldn't bring up paris if i were you, it is poor salesmanship.#Anger,Sadness
+tyler durden: this is a chemical burn. it will hurt more than you've ever been burned before. you will have a scar.#Anticipation,Anger
+alicia: i need to believe, that something extraordinary is possible.#Fear,Trust
+nash: in competitive behavior someone always loses.#Sadness
+charles: well, my niece knows that, john, and she is about this high.#Trust
+nash: see if i derive an equilibrium where prevalence is a non-singular event where nobody loses, can you imagine the effect that would have on conflict scenarios, arm negotiations#Fear,Anticipation,Sadness
+charles: when did you last eat?#None
+nash: currency exchange?#Sadness
+charles: when did you last eat? you know, food.#Anger
+nash: you have no respect for cognitive reverie, you know that?#Sadness
+charles: yes. but pizza - now, pizza i have enormous respect for. and of course beer.#Joy,Trust
+nash: i have respect for beer. i have respect for beer!#Joy,Trust
+tyler durden: we're consumers. we are by-products of a lifestyle obsession. murder, crime, poverty, these things don't concern me. what concerns me are celebrity magazines, television with 500 channels, some guy is name on my underwear. rogaine, viagra, olestra.#Sadness
+narrator: martha stewart.#None
+tyler durden: fuck martha stewart. martha is polishing the brass on the titanic. it is all going down, man. so fuck off with your sofa units and strinne green stripe patterns.#Anger,Disgust
+marla singer: i got this dress at a thrift store for one dollar.#Joy
+narrator: it was worth every penny.#None
+marla singer: it is a bridesmaid is dress. someone loved it intensely for one day, and then tossed it. like a christmas tree. so special. then, bam, it is on the side of the road. tinsel still clinging to it. like a sex crime victim. underwear inside out. bound with electrical tape.#Sadness
+narrator: well, then it suits you.#None
+marla singer: you can borrow it sometime.#Trust
+narrator: you had to give it to him he had a plan. and it started to make sense, in a tyler sort of way. no fear. no distractions. the ability to let that which does not matter truly slide.#Trust,Anticipation
+marla singer: you're the worst thing that is ever happened to me.#Anger,Sadness,Disgust
+narrator: and then, tyler was gone.#None
+tyler durden: self improvement is masturbation. now self destruction#Joy
+narrator: compliance and liability?#None
+marla singer: my tit is gonna rot off.#Anger
+narrator: would you excuse me? i need to take this.#Trust,Anticipation
+tyler durden: hitting bottom isn't a weekend retreat. it is not a goddamn seminar. stop trying to control everything and just let go! let go!#Anger
+narrator: i flipped through catalogs and wondered what kind of dining set defines me as a person?#Sadness
+nash: classes will dull your mind, destroy the potential for authentic creativity.#Joy,Trust
+rick: just a moment. i heard a rumor those two german couriers were carrying letter of transit.#Anger,Disgust
+ugarte: huh? oh, huh, i heard that rumor too. poor devils.#Surprise,Fear
+rick: you're right, ugarte. i *am* a little more impressed with you.#Joy
+rick: i don't like disturbances in my place. either lay off politics, or get out.#Anger,Disgust
+victor laszlo: welcome back to the fight. this time i know our side will win.#Joy,Trust,Anticipation
+ugarte: rick, i hope you're more impressed with me, now? now, if you'll excuse me, i'll share my luck with your roulette wheel.#Joy,Anticipation
+rick: now, now#Fear,Sadness
+rick: here is looking at you kid.#None
+captain renault: oh no, emil, please. a bottle of your best champagne, and put it on my bill.#Joy
+emil: very well, sir.#Joy
+victor laszlo: captain, please#None
+captain renault: oh, please, monsieur. it is a little game we play. they put it on the bill, i tear up the bill. it is very convenient.#Joy
+rick: louie, i think this is the beginning of a beautiful friendship.#Joy,Trust
+narrator: he was full of pep. must've had his grande-latte enema.#None
+narrator: you're insane.#Anger
+tyler durden: no, you're insane.#Anger,Disgust
+captain renault: i've often speculated why you don't return to america. did you abscond with the church funds? run off with a senator is wife? i like to think you killed a man. it is the romantic in me.#Trust
+rick: it was a combination of all three.#None
+ugarte: too bad about those two german couriers, wasn't it?#Joy
+rick: they got a lucky break. yesterday they were just two german clerks. today they're the honored dead.#Trust
+ugarte: you are a very cynical person, rick, if you'll forgive me for saying so.#Joy
+rick: i forgive you.#Anger,Trust
+ricky: and you, you are too fucking *blonde*!#Anger,Disgust
+narrator: bob had bitch tits.#None
+rick: tell me, who was it you left me for? was it laszlo, or were there others in between? or - aren't you the kind that tells?#Anger
+ilsa: rick, i have to talk to you.#Fear,Sadness
+rick: uh-huh. i saved my first drink to have with you. here.#Sadness
+ilsa: sing it, sam.#Sadness
+sam: you must remember this / a kiss is still a kiss / a sigh is just a sigh / the fundamental things apply / as time goes by. / and when two lovers woo, / they still say, i love you / on that you can rely / no matter what the future brings#None
+rick: sam, i thought i told you never to play#-Anger
+ilsa: i wasn't sure you were the same. let is see, the last time we met#Joy,Trust
+rick: was la belle aurore.#None
+ilsa: how nice, you remembered. but of course, that was the day the germans marched into paris.#Joy
+rick: not an easy day to forget.#Trust
+ilsa: no.#Sadness
+rick: i remember every detail. the germans wore gray, you wore blue.#Trust
+captain renault: in 1935, you ran guns to ethiopia. in 1936, you fought in spain, on the loyalist side.#Joy,Trust
+rick: i got well paid for it on both occasions.#Joy
+captain renault: the *winning* side would have paid you *much better*.#None
+narrator: when the fight was over, nothing was solved, but nothing mattered. we all felt saved.#Anticipation,Sadness,Fear
+narrator: it must've been tuesday. he was wearing his cornflower-blue tie.#Trust
+rick: don't you sometimes wonder if it is worth all this? i mean what you're fighting for.#Anticipation
+victor laszlo: you might as well question why we breathe. if we stop breathing, we'll die. if we stop fighting our enemies, the world will die.#Trust
+rick: well, what of it? it'll be out of its misery.#Surprise,Trust
+victor laszlo: you know how you sound, mr. blaine? like a man who is trying to convince himself of something he doesn't believe in his heart.#Trust
+major strasser: you give him credit for too much cleverness. my impression was that he is just another blundering american.#Disgust
+captain renault: we musn't underestimate american blundering. i was with them when they blundered into berlin in 1918.#Trust
+bender: stop!#Anger,Sadness,Disgust
+rick: i am on their blacklist - their roll of honor!#Sadness
+jan brandel: captain renault may i?#Anticipation
+captain renault: oh no! not here please! come to my office tomorrow morning. we'll do everything businesslike.#Surprise
+jan brandel: we'll be there at six!#Fear,Trust
+captain renault: i'll be there at ten.#None
+narrator: like so many others, i had become a slave to the ikea nesting instinct.#None
+croupier: your winnings, sir.#Fear,Trust
+captain renault: everybody out at once!#None
+rick: how can you close me up? on what grounds?#Anger
+captain renault: i am shocked, shocked to find that gambling is going on in here!#Anger,Disgust
+narrator: every evening i died, and every evening i was born again, resurrected.#Sadness,Anticipation
+nash: i still see things that are not here. i just choose not to acknowledge them. like a diet of the mind, i just choose not to indulge certain appetites; like my appetite for patterns; perhaps my appetite to imagine and to dream.#Trust,Sadness
+ilsa: kiss me. kiss me as if it were the last time.#Fear,Sadness
+charles: is my roommate a dick?#Disgust
+berger: we read five times that you were killed, in five different places.#Joy
+victor laszlo: as you can see, it was true every single time.#None
+parcher: conviction, it turns out, is a luxury of those on the sidelines, mr. nash.#Joy,Trust,Anticipation
+dr. rosen: imagine if you suddenly learned that the people, the places, the moments most important to you were not gone, not dead, but worse, had never been. what kind of hell would that be?#Sadness,Anticipation
+john nash: and then, on the way home, charles was there again. sometimes i miss talking to him. maybe rosen is right. maybe i have to think about going back to the hospital.#Sadness
+alicia nash: maybe try again tomorrow.#Sadness,Trust
+rick: i stick my neck out for *nobody*!#Sadness
+narrator: a new car built by my company leaves somewhere traveling at 60 mph. the rear differential locks up. the car crashes and burns with everyone trapped inside. now, should we initiate a recall? take the number of vehicles in the field, a, multiply by the probable rate of failure, b, multiply by the average out-of-court settlement, c. a times b times c equals x. if x is less than the cost of a recall, we don't do one.#Trust
+business woman on plane: are there a lot of these kinds of accidents?#Surprise
+narrator: you wouldn't believe.#Trust
+business woman on plane: which car company do you work for?#Surprise,Trust
+narrator: a major one.#Joy
+tyler durden: ok any historic figure.#Trust
+narrator: i'd fight gandhi.#Sadness
+tyler durden: good answer.#Surprise
+narrator: how about you?#Anticipation
+tyler durden: lincoln.#Trust
+narrator: lincoln?#Surprise
+tyler durden: big guy, big reach. skinny guys fight 'til they're burger.#Trust
+tyler durden: like a monkey, ready to be shot into space. space monkey! ready to sacrifice himself for the greater good.#Anger,Disgust
+tyler durden: from now on, all those with shaved heads space monkeys.#Disgust
+tyler durden: god damn! we just had a near-life experience, fellas.#Joy
+narrator: i ran. i ran until my muscles burned and my veins pumped battery acid. then i ran some more.#Sadness
+narrator: how embarrassing a house full of condiments and no food.#Sadness
+narrator: if you wake up at a different time in a different place, could you wake up as a different person?#Joy,Anticipation
+narrator: after fighting, everything else in your life got the volume turned down.#Sadness,Disgust
+narrator: i felt like putting a bullet between the eyes of every panda that wouldn't screw to save its species. i wanted to open the dump valves on oil tankers and smother all the french beaches i'd never see. i wanted to breathe smoke.#Anger,Fear,Sadness,Disgust
+marla singer: it is cheaper than a movie, and there is free coffee.#Sadness
+ricky: i can't believe he is still standing.#Surprise
+thomas: one tough motherfucker.#Anger,Disgust
+narrator: is tyler my bad dream? or am i tyler is?#Fear,Sadness
+captain renault: have you lost your mind?#Anger
+rick: i have. sit down!#Anger
+captain renault: put that gun down!#Anger,Disgust
+rick: i don't want to shoot you, but i will if you take one more step!#Anger,Trust
+captain renault: under the circumstances i will sit down.#Fear,Trust
+narrator: was it ticking?#Surprise
+airport security officer: actually throwers don't worry about ticking 'cause modern bombs don't tick.#Trust
+narrator: sorry, throwers?#Surprise,Disgust
+airport security officer: baggage handlers. but, when a suitcase vibrates, then the throwers gotta call the police.#Trust
+narrator: my suitcase was vibrating?#Anger,Surprise
+airport security officer: nine times out of ten it is an electric razor, but every once in a while#Trust
+nash: i will not buy you gentlemen beer.#Sadness
+bender: oh, we're not here for beer, my friend.#Trust
+lou: do you hear me now?#Anger,Disgust
+tyler durden: no, i didn't quite catch that, lou. still not getting it. okay, i got it. shit, i lost it.#Anger,Fear,Disgust
+nash: good morning, eager young minds#Sadness
+senor ferrari: what do you want for sam?#Surprise
+rick: i don't buy or sell human beings.#None
+senor ferrari: too bad. that is casablanca is leading commodity. with refugees alone we can make a fortune if you work with me through the black market.#Joy,Trust
+rick: suppose you run your business and let me run mine.#None
+captain renault: rick, have you got those letters of transit?#Joy
+rick: louis, are you pro-vichy or free french?#Anger,Sadness,Disgust
+captain renault: serves me right for asking a direct question. the subject is closed.#Joy
+narrator: i am jack is broken heart.#Sadness
+rick: here is looking at you, kid.#Sadness
+victor laszlo: are you enough of a businessman to appreciate an offer of 100,000 francs?#None
+rick: i appreciate it, but i don't accept it.#Trust
+captain renault: major strasser has been shot round up the usual suspects.#None
+victor laszlo: you ran guns to ethiopia. you fought against the fascists in spain.#Fear
+rick: what of it?#None
+victor laszlo: isn't it strange that you always happen to be fighting on the side of the underdog?#Fear
+rick: yes. i found that a very expensive hobby, too. but then i never was much of a businessman.#None
+airport security officer: it is a dildo. of course it is company policy never to, imply ownership in the event of a dildo always use the indefinite article a dildo, never your dildo.#Trust
+narrator: i don't own#Anger,Sadness
+tyler durden: the salt balance has to be just right, so the best fat for making soap comes from humans.#Fear
+narrator: wait. what is this place?#Surprise
+tyler durden: a liposuction clinic.#Trust
+narrator: except for their humping, tyler and marla were never in the same room. my parents pulled this exact same act for years.#Sadness
+captain renault: is everything ready?#None
+rick: i have the letters right here.#Anticipation,Trust
+captain renault: tell me, when we searched the place, where were they?#Anticipation
+rick: sam is piano.#Trust
+captain renault: serves me right for not being musical.#None
+ilsa: with the whole world crumbling, we pick this time to fall in love.#Joy,Sadness
+rick: yeah, it is pretty bad timing. where were you, say, ten years ago?#Joy
+ilsa: ten years ago? well, let is see  oh, yes, i was having a brace put on my teeth. where were you?#Joy,Surprise
+rick: looking for a job.#Joy
+charles: the prodigal roommate arrives.#Trust
+narrator: you met me at a very strange time in my life.#Joy,Trust
+nash: well, martin hansen. it is martin, isn't it?#Joy,Trust
+hansen: why yes, john, it is.#Trust,Joy
+nash: i assume you've gotten quite used to miscalculation. i read your pre-prints. both of 'em. one on nazi scientists and the other one on, uh non-linear equations, and i am extremely confident that there is not one seminal or innovative idea in either one of them enjoy your punch.#Joy,Trust
+marla singer: candy-stripe a cancer ward. it is not my problem.#None
+rick: alright, i'll make it easier for you- go ahead and shoot. you'll be doing me a favor.#Trust
+victor laszlo: and what if you track down these men and kill them, what if you killed all of us? from every corner of europe, hundreds, thousands would rise up to take our places. even nazis can't kill that fast.#Anger
+victor laszlo: are you ready, ilsa?#None
+ilsa: yes, i am ready. good-bye rick. god bless you.#Sadness
+rick: you better hurry. you'll miss that plane.#Sadness
+victor laszlo: thanks. i appreciate it. welcome back to the fight. this time i *know* our side will win.#Joy,Trust
+rick: why did you come back? to tell me why you ran out on me at the railway station?#Anger,Surprise
+ilsa: yes.#Anger
+rick: well, you can tell me now. i am reasonably sober.#None
+yvonne: give me another.#Anger
+rick: sascha, she is had enough.#Anger
+yvonne: don't listen to him, sascha. fill it up!#Anger,Disgust
+sascha: yvonne, i loff you, but he pays me.#Fear
+sam: boss, ain't you going to bed?#Surprise
+rick: not right now.#Sadness
+sam: ain't you planning on going to bed in the near future?#Fear
+rick: no.#Anger
+sam: you ever going to bed?#None
+rick: no!#Anger
+sam: well, i ain't sleepy either.#Sadness
+narrator: life insurance pays off triple if you die on a business trip.#Fear
+dr. rosen: my name is rosen, dr. rosen. i am a psychiatrist.#Trust
+ugarte: rick! rick! hide me, rick!#Joy
+major strasser: what was the meaning of that phone call?#Anger,Surprise
+captain renault: victor laszlo is on that plane.#Fear
+major strasser: why do you stand here? why don't you stop him?#Anger,Disgust
+captain renault: ask mr. rick.#Fear
+rick: get away from that phone!#Anger
+major strasser: i would advise you not to interfere.#Anger,Disgust
+rick: i was willing to shoot captain renault and i am willing to shoot you.#Anger
+major strasser: hello?#Anger
+rick: put that phone down!#Anger,Disgust
+major strasser: get me the radio tower.#Anger
+rick: put it down!#Anger,Disgust
+captain renault: major strasser is been shot.#Fear
+tyler durden: the richest, creamiest fat in the world. the fat of the land.#Anger,Disgust
+tyler durden: i look around, i look around, i see a lot of new faces.  shut up. which means a lot of you have been breaking the first two rules of fight club.#Disgust,Anger
+narrator: i found freedom. losing all hope was freedom.#Sadness
+narrator: is that what a man looks like?#Trust
+tyler durden: self-improvement is masturbation. now self-destruction#Joy,Disgust
+narrator: with insomnia, nothing is real. everything is far away. everything is a copy of a copy of a copy.#Sadness
+tyler durden: if you could fight anyone, who would you fight?#Trust,Anticipation
+narrator: shatner. i'd fight william shatner.#Joy
+narrator: i wrote little haiku poems. i emailed them to everyone.#None
+tyler durden: do not watch. i cannot go when you watch.#None
+narrator: apart from seasoning the lobster bisque, he farted on the meringue, sneezed on braised endive, and as for the cream of mushroom soup, well#Joy,Trust
+tyler durden: go ahead. tell 'em.#Anger
+narrator: you get the idea.#Joy
+edgar: i go out, i work my butt off to make a living, all i want is to come home to a nice clean house with a nice fat steak on the table, but instead i get this. it looks like poison. don't you take that away, i'm eating that, damn it! it is poison, isn't it? i swear to god i would not be surprised if it was, the way you skulk around here like a dog that's been hit too much or ain't been hit enough, i can't make up my mind. you're useless, beatrice. the only thing that pulls its weight around here is my goddamn truck! just then, a flying saucer smashes his truck, and edgar comes out of the house to look at the damage figures.#Anger, Disgust
+kay: all right that's confiscated. all of it. and i want you on the next transport off this rock or i'm gonna shoot you where it don't grow back.#Trust, Anticipation
+jay: shaken yeah and and and i'm gonna be back to talk about them rolexes.#Anticipation,Trust
+zed: we're not hosting an intergalactic kegger down here.#Anticipation
+dr._weaver: what's with the cat?#Surprise
+cop_in_morgue: oh, the cat. yeah, well, there's a problem with the cat. sign here.#Anticipation
+dr._weaver: signing what's the problem with the cat?#Surprise
+cop_in_morgue: it's your problem. leaves chortling at his own joke.#Joy
+dr._weaver: i hate the living.#Surprise, Anger
+kay: all right, beatrice, there was no alien. the flash of light you saw in the sky was not a ufo. swamp gas from a weather balloon was trapped in a thermal pocket and reflected the light from venus.#Anticipation
+jay: wait a minute. you just flash that thing, it erases her memory, and you just make up a new one?#Surprise,Trust
+kay: a standard issue neuralyzer.#Anticipation
+jay: and that weak-ass story's the best you can come up with?#Disgust
+kay: on a more personal note beatrice, edgar ran off with an old girlfriend. you're gonna go stay with your mom a couple nights. you're gonna get over it and decide you're better off.#Anticipation
+jay: well, yeah, you know, 'cause 'cause he never appreciated you anyway. in fact, you know what - you kicked him out! and now that he's gone you're gonna go into town, you go to bloomingdale's and find some nice dresses, get yourself some shoes, you know, find somewhere, maybe you can get a facial. and, uh, oh - hire a decorator to come in here quick, 'cause damn.#Trust, Anticipation,Anger
+zed: gentlemen, congratulations. you're everything we've come to expect from years of government training. now please step this way, as we provide you with our final test an eye exam a series of flashes occur to candidates rejected as mib agents.#Joy,Trust
+zed: you'll dress only in attire specially sanctioned by mib special services. you'll conform to the identity we give you, eat where we tell you, live where we tell you. from now on you'll have no identifying marks of any kind. you'll not stand out in any way. your entire image is crafted to leave no lasting memory with anyone you encounter. you're a rumor, recognizable only as deja vu and dismissed just as quickly. you don't exist; you were never even born. anonymity is your name. silence your native tongue. you're no longer part of the system. you're above the system. over it. beyond it. we're "them." we're "they." we are the men in black.#Anticipation,Joy,Trust,Anger
+bug: place your projectile weapon on the ground.#Anger,Disgust
+edgar: you can have my gun, when you pry it from my cold dead fingers.#Anger,Anticipation
+bug: your proposal is acceptable.#Anticipation
+jay: zed, don't you guys ever get any sleep around here?#Surprise,Fear
+zed: the twins keep us on centaurian time, standard thirty-seven hour day. give it a few months. you'll get used to it or you'll have a psychotic episode.#Anticipation
+kay: set for pulsar level five, subsonic implosion factor two.#Anticipation
+jay: what?#Surprise,Fear
+kay: just shoot the damn thing on the count of three!#Anger
+kay: all right, kid, here's the deal. at any given time there are approximately 1500 aliens on the planet, most of them right here in manhattan. and most of them are decent enough, they're just trying to make a living.#Anticipation
+jay: cab drivers?#Surprise
+kay: not as many as you'd think.#Anticipation
+kay: arquillian battle rules, kid first we get an ultimatum, then a warning shot, then we have a galactic standard week to respond.#Anticipation
+jay: a galactic standard week? how the hell long is that?#Surprise,Fear
+kay: one hour.#Anticipation
+jay: one hour then what?#Surprise,Fear
+jay: oh, now that's bullshit.#Anger 
+edwards: chasing perp freeze! nypd! freeze!#Anger
+edwards: freeze means stop! the perp he is chasing does not slow down#Anger,Disgust
+jay: there's only one way off this planet, baby, and that's through me.#Anticipation
+jay: did you ever flashy-thing me?#Anger,Disgust
+kay: no.#Anticipation
+jay: i ain't playing with you, k. did you ever flashy-thing me?#Anger,Disgust
+kay: no.#Anticipation
+elle: hey, jay! zed called. the high consulate from solaxiant 9 wants floor seats for the next bulls game. #Anticipation
+jay: all right, let's put in a call to dennis rodman. he's from that planet.#Anticipation,Trust
+elle: rodman? you're kidding.#Surprise,Disgust
+jay: nope.#Anticipation
+elle: not much of a disguise.#Disgust
+jay: suited up you know what the difference is between you and me? i make this look good.#Disgust,Joy,Anger
+kay: put up your arms and all your flippers.#Anticipation
+kay: meet the twins, bweryang and bob.#Trust,Anticipation
+beatrice: you here to make fun of me too?#Anger,Disgust
+kay: no, ma'am. we at the fbi do not have a sense of humor we're aware of. may we come in?#Anticipation,Joy
+beatrice: sure.#Trust,Joy
+jay: to startled passengers it just be raining black people in new york! j has just jumped from a bridge onto a tour bus#Disgust,Surprise
+kay: not bad for your second day of work, is it?#Joy,Trust
+jay: this definitely rates about a 9.0 on my weird-shit-o-meter.#Disgust,Joy,Surprise
+kay: you should've been here for the zeronian migration in 1968.#Joy,Anticipation,Trust
+perp: talking to himself he's coming! he's coming!#Fear
+james_edwards: yeah, and when he gets here, i'll arrest his ass too!#Anticipation,Anger
+edgar: you're coming with me. the bug takes dr. weaver with him into the flying saucer#Anger,Trust
+dr._weaver: what?#Surprise,Fear,Disgust
+edgar: it's a long trip. i'll need a snack.#Anticipation,Anger,Joy
+kay: you sold a reverberating carbonizer with mutate capacity to an unlicensed cephalopoid, jeebs, you piece of shit #Anger,Disgust
+jeebs: he looked all right to me.#Fear,Anticipation
+kay: looking skywards they're beautiful, aren't they?#Anticipation,Joy
+jay: what?#Surprise,Joy
+kay: the stars.#Anticipation
+jay: k, you're frightening your partner.#Joy,Anticipation 
+kay: i haven't been looking for a partner. i've been looking for a replacement.#Anticipation,Sadness
+jay: k, i can not do this by myself, all right?#Fear,Disgust,Sadness
+dr._weaver: hey, guys, can you drop me off home? my apartment isn't in this area #Anger,Trust,Anticipation
+kay: i've just been down the gullet of an interstellar cockroach. that's one of a hundred memories i don't want.#Disgust,Anger
+jay: unlimited technology from the whole universe, and we cruise 'round in a ford p.o.s.#Disgust,Anticipation
+kay: see ya around, jay.#Sadness,Anticipation,Joy
+jay: no, you won't.#Sadness,Anticipation
+kay: did he say anything to you?#Anticipation,Trust
+james_edwards: yeah, that the world is coming to an end.#Fear,Anticipation
+kay: did he say when? edwards looks at k oddly#Disgust,Surprise
+jay: stepping on some cockroaches oh, i'm sorry. was that your auntie? then that must be your uncle over there!#Disgust,Anger,Surprise
+kay: this caused the 1977 new york blackout. a practical joke by the great attractor. he thought it was funny as hell.#Disgust,Anticipation,Joy
+kay: we do not discharge our weapons in view of the public!#Anger,Disgust
+jay: man, we ain't got time for this cover-up bullshit! i don't know whether or not you've forgotten, but there's an arquillian battle cruiser that's about to #Anger,Disgust
+kay: there's always an arquillian battle cruiser, or a corillian death ray, or an intergalactic plague that is about to wipe out all life on this miserable little planet, and the only way these people can get on with their happy lives is that they do not know about it!#Anger,Anticipation
+kay: cocks gun roaches check in #Anticipation
+jay: cocks gun but they don't check out.#Anticipation
+jeebs: you insensitive pricks! do you have any idea how much that stings? after getting his head shot off#Anger,Disgust
+zed: kay, give the kid a weapon.#Anticipation,Trust
+kay: a series four de-atomizer. kay opens a chest filled with intergalactic guns. he picks up a large rifle#Anticipation,Joy
+jay: that's what i'm talkin' about.#Surprise,Joy
+jay: stares the weapon in disgust hey, kay, nah, nah. come on, man, you-you get a series four de-atomizer and i-i get a little - little midgy cricket? #Disgust,Anger,Sadness
+kay: notices jay is pointing the gun in his direction whoa! kid#Fear,Surprise 
+jay: feel like i'm gonna break this damn thing ! grabs the arm jay is holding the weapon with and points it away from him #Disgust,Anger
+edgar bug: you idiots! you don't get it - i've won! it's over! you're milksuckers! you don't matter! in fact, in just a few seconds you won't even be matter!#Disgust,Anger,Anticipation
+jay: you know what they say. it's better to have loved and lost than never to have loved at all.#Anticipation,Trust
+kay: try it.#Trust
+jay: all right, i'm in. 'cause there's some next level shit going on and i'm ok with that. but before y'all go beaming me up there's one thing you gotta remember you chose me so you recognized the skills, so i don't want nobody calling me son or kid or sport or nothing like that, cool?#Trust,Anticipation,Disgust
+kay: cool, whatever you say, slick, but i need to tell you something about all your skills. as of right now, they mean precisely dick.#Anticipation,Disgust,Joy
+zed: edwards. let's put it on.#Trust
+edwards: put what on?#Surprise
+zed: the last suit you'll ever wear.#Anticipation
+ins_agent_janus: seeing k take an immigrant into custody sir! sir, you can't do that !#Surprise,Anger
+kay: don't "sir" me young man, you have no idea who you're dealing with!#Anger,Anticipation
+edgar bug: y'know, i've noticed an infestation here. everywhere i look, in fact. nothing but undeveloped, unevolved, barely conscious pond scum, totally convinced of their own superiority as they scurry about their short, pointless lives.#Disgust,Anger
+zap-em_man: well, yeah. uh don't you want to get rid of 'em?#Anticipation,Trust
+edgar bug: ah in the worst way.#Joy,Trust
+jay: now that's the worst disguise ever. that guy's gotta be an alien. jay and kay meet a strange-looking man holding a dog on a leash#Disgust,Joy
+frank_the_pug: you don't like it, you can kiss my furry little butt!#Anger,Disgust
+kay: i don't suppose you know what kind of alien life form leaves a green spectral trail and craves sugar water, do you?#Anticipation,Disgust
+jay: uh, wait, that was on "final jeopardy!" last night. damn, alex said #Joy,Disgust
+kay: opening his cell phone zed, we have a bug.#Anticipation
+dr._weaver: you don't want to eat me. i'm a very important person on my planet. like a queen, a goddess even. there are those who worship me. i'm not saying this to impress you, i'm just warning you it could start a war. dr. weaver is trying to stall edgar so she can escape#Disgust,Fear
+edgar: war? good. that means more food for my family. all 78 million of them. that's a lot of mouths to feed, highness.#Anticipation,Joy
+dr._weaver: you're a wonderful dad, but i'm staying here! escapes#Anger,Disgust
+kay: keep him on this planet!#Anger
+jay: kay, where are you going?#Surprise
+kay: i'm going to get my gun back.#Anticipation
+kay: this is gonna replace cd's soon; guess i'll have to buy the white album again ah #Anticipation,Joy
+kay: that is a lot of fun. it's a universal translator. we're not even supposed to have it, and i'll tell you why human thought is so primitive it's looked upon as an infectious disease in some of the better galaxies. that kind of makes you proud, doesn't it? huh? diverting attention elsewhere#Disgust,Joy
+kay: congratulations, reg. it's a squid. jay has just helped deliver an alien baby#Joy,Anticipation
+jay: you know it's actually kinda after delivering a squid-like alien baby#Joy
+jay: cute. baby throws up on him#Joy,Surprise
+edgar: get your big butt back in the house!#Anger
+beatrice: edgar, what on earth was that?#Surprise,Disgust
+edgar: bug in disguise sugar #Anticipation
+beatrice: i've never seen sugar do that.#Disgust
+edgar: give me sugar in water.#Anger,Anticipation
+nick_the_van_driver: goddamn bugs! #Anger,Disgust
+kay: you're nothing but a smear on the sports page to me, you slimy, ugly, intestinal parasite! eat me! eat me!#Anger,Disgust
+jay: kay! kay! the bug swallows kay whole#Anger,Fear,Sadness
+kay: did anything about that seem unusual to you?#Anticipation,Joy,Disgust
+edgar: where do you keep your dead?#Surprise,Trust
+manny_the_news_vendor: thinks i don't have any dead.#Disgust,Joy
+edgar: where?#Anger,Trust
+manny_the_news_vendor: i don't know, the city morgue!#Fear
+jay: kay raising his gun get down! kay ducks. jay shoots and the glass window shatters, the mailbox explodes and jay is thrown against the wall behind him whooo jay notices the bug driving away#Anger
+passport_officer: you ever heard of division 6?#Anticipation
+police_inspector: there is no division 6. this is bullshit.#Disgust
+passport_officer: yeah.#Anticipation
+jay: to bug oh, you have so got to die!#Anger,Anticipation
+jay: and what, we don't like bugs? after kay informs zed that they have a bug#Surprise,Trust
+kay: bugs thrive on carnage, tiger. they consume, infest, destroy, live off the death and destruction of other species.#Disgust,Anticipation
+jay: you were stung as a child, weren't you?#Disgust,Joy
+kay: imagine a giant cockroach, with unlimited strength, a massive inferiority complex, and a real short temper, is tear-assing around manhattan island in a brand-new edgar suit. that sound like fun?#Disgust,Anger
+kay: we're gonna check the hot sheets.#Anticipation
+jay: these are the hot sheets? kay pulls up to a newsstand and buys a pile of supermarket tabloids#Surprise,Disgust
+kay: best investigative reporting on the planet. but go ahead, read the new york times if you want. they get lucky sometimes.#Disgust,Anticipation
+kay: so what do you think?#Anticipation
+jay: whew! very interesting. she got a whole "queen of the undead" thing going on #Disgust,Joy
+kay: what about the body?#Surprise,Trust
+jay: great body #Joy,Trust
+kay: the dead body.#Disgust,Anger
+jay: hey, old guys! do those still work? points at the ships on the towers at flushing meadows#Surprise,Trust
+jay: what's up? the alien perp is on top of a building running away from jay. he opens up a door and sees jay pointing his gun at him#Anticipation,Joy
+perp: he's coming because i failed and now he'll kill me, too.#Fear,Anticipation
+jay: yeah, well you just pissing everybody off today, huh?#Anger,Disgust
+perp: you don't understand. your world's gonna end.#Sadness,Anticipation
+jay: what the hell are you? he blinks with his eyeballs#Disgust
+jay: hey, watch that ledge. watch the ledge. look, come on down and we'll get those eyes fixed. don't even worry about it. let me talk to you. hey, hey! the perp is on the edge of the building
+the perp raises his arms, falls off the building and lands on the sidewalk #Disgust,Fear,Surprise
+nypd_sergeant_at_edwards_'_interrogation: edwards, if you were half the man that i am #Disgust
+jay: hey man, what are you talking about? i am half the man that you are!#Anger,Disgust
+kay: we are the best kept secret in the galaxy. we monitor, licence and police all alien activity on the earth. we're your first, last, and only line of defense. we live in secret, we exist in shadow. from trailer#Anger,Trust,Antcipation
+jay: and we dress in black.#Trust
+kay: searching for a handle on the moment? i can't help you. the only comfort i can offer is my promise that tomorrow morning you won't remember a thing.#Trust,Sadness
+jay: about to be neuralyzed that's not exactly some shit you just forget #Sadness,Anticipation
+police_inspector: i want to talk to you.#Anticipation
+nypd_sergeant_at_edwards_'_interrogation: shouting at edwards ten minutes - you take your best shot, tough guy! #Anger,Disgust
+police_inspector: outside, now! #Anger,Trust
+james_edwards: take ten minutes on a stairmaster, you pudgy bastard!#Disgust
+jay: all we gotta do is go in here and get a cat. it's not that hard. but if you go in there, you're gonna lay your jack webb on her, start flashing your brain-ray all in her face. you're gonna wind up giving her leukemia or something. woman's a doctor, she don't need you flashing away half her med school classes. five minutes.#Disgust,Anger
+kay: two minutes.#Anticipation
+gentle_rosenburg_the_arquillian_jeweler: to his cat okay, sweetie. just hang on while i pay the impolite man.#Disgust,Trust,Joy
+jay: blows out that's right, that's - ooh! um, kay! oh, damn, man! hey, uh, something's - kay! something's peekin', man! #Surprise,Anger
+jay: i can't believe you lookin' for tips in the supermarket tabloids!#Surprise,Disgust,Joy
+kay: not lookin' for. found.#Anticipation
+ins_agent_janus: who are you, really?#Surprise,Disgust 
+kay: really?#Disgust,Surprise
+kay: i am just a figment of your imagination. puts on a pair of sunglasses#Anticipation
+kay: damn, what a gullible breed i'm serious, fellas, you're lucky to be alive after a blast like that. flashes neuralyzer #Anticipation,Trust,
+ins_agent_janus: what blast?#Surprise
+kay: underground gas main, genius! you fellas need to exercise a lot more caution before discharging your firearms, i'll tell you that much right now. especially you.#Anticipation
+kay: now have yourselves checked out with ems on the other side of the hill before you leave. points at janus#Anticipation
+kay: oh, the red button there kid, don't ever, ever touch the red button!#Anticipation,Fear
+kay: do you remember the little red button?#Anticipation
+jay: warily yeah #Trust
+kay: push the little red button.#Anticipation
+kay: and you may want to put on a seatbelt jay pushes it#Anticipation,Joy
+jay: kay! kayyyyy! the car flips upside down, sprouts rocket engines and begins riding along the top of the tunnel. kay is safe because he has a seatbelt on, but jay is flipped over#Fear,Surprise
+kay: let her go, shit eater. the edgar-bug has just captured the deputy medical examiner laurel weaver and is holding her at ray-gunpoint#Anger,Disgust
+bug: oh, listen, monkey boy. compared to you humans, i'm on the top of the evolutionary ladder, so can it, all right?#Disgust,Anger
+kay: you're breaking my heart. show me your face and i'll cure all your ills.#Disgust,Joy
+bug: you ever pull the wings off a fly? you care to see the fly get even?#Disgust,Trust
+kay: you remember "casablanca", right?#Anticipation
+jay: yeah.#Anticipation
+kay: same thing, just no nazis.#Anticipation
+james_edwards: maybe you already answered this, but, why exactly are we here?#Surprise
+zed: noticing a recruit raising his hand son?#Anticipation
+second_lieutenent_jake_jenson: second lieutenant, jake jenson. west point. graduate with honors. we're here because you are looking for the best of the best of the best, sir!#Joy,Anger,Anticipation
+zed: throws edwards a contemptible glance as edwards laughs what's so funny, edwards?#Surprise,Disgust
+james_edwards: boy, captain america over here! "best of the best of the best, sir!" "with honors." yeah, he's just really excited and he has no clue why we're here.#Joy,Disgust
+edwards: why the big secret? people are smart. they can handle it.#Surprise,Disgust
+kay: a person is smart. people are dumb, panicky dangerous animals and you know it. fifteen hundred years ago everybody knew the earth was the center of the universe. five hundred years ago, everybody knew the earth was flat, and fifteen minutes ago, you knew that humans were alone on this planet. imagine what you'll know tomorrow.#Disgust,Anticipation
+edwards: what's the catch?#Surprise,Trust
+kay: the catch? the catch is you will sever every human contact. nobody will ever know you exist anywhere. ever. i'll give you to sunrise to think it over. starts walking away#Anticipation,Trust,Sadness
+edwards: shouting after kay hey! is it worth it?#Surprise,Joy,Trust
+kay: oh yeah, it's worth it starts walking again, stops and turns back briefly if you're strong enough!#Anticipation,Trust
+zed: may i ask why you felt little tiffany deserved to die? in a shooting range, confronted with numerous menacing-looking targets, edwards shoots a cardboard little girl#Disgust,Surprise,Joy
+james_edwards: well, she was the only one that actually seemed dangerous at the time, sir.#Anticipation,Anger
+zed: how'd you come to that conclusion?#Surprise,Disgust
+james_edwards: well, first i was gonna pop this guy hanging from the street light, and i realized, y'know, he's just working out. i mean, how would i feel if somebody come runnin' in the gym and bust me in my ass while i'm on the treadmill? then i saw this snarling beast guy, and i noticed he had a tissue in his hand, and i'm realizing, y'know, he's not snarling, he's sneezing. y'know, ain't no real threat there. then i saw little tiffany. i'm thinking, y'know, eight-year-old white girl, middle of the ghetto, bunch of monsters, this time of night with quantum physics books? she about to start some shit, zed. she's about eight years old, those books are way too advanced for her. if you ask me, i'd say she's up to something. and to be honest, i'd appreciate it if you eased up off my back about it. pause or do i owe her an apology? pause that's a good shot though #Anticipation,Joy,Anger,Disgust
+jay: yo, kay, check it out, when do i get my own little flashy-thing memory-messer-upper? #Anticipation,Joy
+kay: when you grow up.#Anticipation,Anger
+jay: hmm, 'kay.#Anticipation,Trust
+dr._weaver: interesting job you boys have blasting edgar the bug #Joy,Anticipation,Surprise
+jay: going to get your gun back, huh?#Anticipation
+kay: i like this gun #Anticipation,Joy,Trust
+jay: well, well. big, bad bug got a bit of a soft spot, huh? what i can't understand is, why you gotta come down here bringing all this ruckus! snatching up galaxies and everything. my attitude is don't start nothing, won't be nothing! laurel weaver looks at the two, amazed as edgar leans close to jay you better ease up out of my face before something bad happen to you. kay cocks his gun while inside edgar's stomach too late. he gets blasted into two from inside, kay falls down next to jay as they both are covered in slime j crushes cockroaches, which enrages edgar #Disgust,Anger,Joy
+edwards: looking at a mib photo awww, you brought that tall man some flowers.#Joy,Surprise,Anticipation
+kay: z, get a containment unit to come down to the city morgue #Anticipation
+zed: containment will be of little point, old friend. most of the aliens and ships are gone already. it's like the party's over and the last one to leave gets the cheque sees the worms are leaving#Anticipation,Sadness
+zed: you miserable little ingrates!#Anger,Disgust
+kay: months, days, hours. always face it forward. explaining the neuralyzer to j #Anticipation
+jay: holds up his badge see that? nypd, means i will knock your punkass down! #Anger,Disgust,Joy
+kay: you know, you're much too tense. you're a young man. you need to relax, learn to take some joy in your work. do you like music? plays elvis presley's "the promised land" on the radio k drives a jet-propelled car, while j hangs on screaming #Joy,Disgust,Anticipation
+kay: that's better. mouths along with elvis, and drives onto the roof of a tunnel#Anticipation,Joy
+jay: aw shit! aw damn! k! k! k avoids a traffic light and brings the car back to ground level#Fear,Surprise
+jay: you do know elvis is dead, right? #Surprise,Anger,Disgust
+kay: no, elvis is not dead. he just went home. #Anticipation
+kay: we'll take it from here. first words #Anticipation,Anger
+kay: you're under arrest for violating sections 4153 of the tyco treaty.#Anticipation,Anger
+jay: so hand over whatever galaxy you might be carrying and step away from your busted ass vehicle, and put your hands on your head!#Anticipation,Anger,Disgust
+
+
